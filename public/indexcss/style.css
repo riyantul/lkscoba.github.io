@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(255, 255, 255);
+}
+ 
+.space{
+    background-color: #dfdfdf;
+    color: #17252a;
+    display: flex;
+    font-size: small;
+    justify-content: flex-end;
+    padding: 2px 10%;
+    
+}
+
+.space span {
+    margin: 10px ;
+}
+.space span a{
+    margin: 10px  15px;
+    text-decoration: none;
+    color:rgba(83, 83, 83, 0.753);
+    font-weight:bolder;
+}
+nav{
+    /*background: linear-gradient(to bottom right, rgb(99, 215, 235), #ffd06bfa ) ;*/
+    background-color: #ffffff;
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-between;
+    position: relative;
+   
+}
+nav .logo{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+nav .logo img{
+    margin-right: 15px;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center ;
+    
+}
+nav .navbar ul{
+    display: flex;
+    align-items: center ;
+}
+
+nav .navbar ul li{
+    list-style: none;
+    margin: 10px;
+}
+nav .navbar ul li a{
+    text-decoration: none;
+    color: #464646;
+}
+ 
+nav .navbar ul li img{
+    margin-bottom: -4px;
+}
+ 
+nav .navbar ul li a:hover{
+    display: inline-block;
+ 
+    border-radius: 2px;
+    color: #000000;
+     
+}
+ 
+
+.image{
+    margin: 10px 0;
+    height: 100%;
+     
+}
+ 
+ 
+ 
+ 
+ 
+.warna{
+    background-color: #ffffff;
+    position: relative;
+    margin: -90px 10%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 20px 10px;
+    box-shadow: 1px 1px 5px grey;
+    
+}
+.box-dalam{
+    display: flex;
+    margin: 5px 10px;
+    justify-content: space-around;
+}
+.isi{
+    width: 150px;
+}
+
+.warna h3{
+    margin: 15px;
+}
+section{
+    padding: 10px 15%;
+    display: flex;
+    background-color: #3aafa9;
+}
+section .wawasan{
+    display:flex;
+    align-items:center ;
+    color:#feffff;
+}
+section .wawasan h1{
+    margin: 10px 0;
+}
+section .wawasan p{
+    margin: 10px 0;
+}
+section .gambar img{
+    border-radius: 5px;
+    padding: 0 15px;
+    
+}
+
+.judul {
+    margin: 100px 0;
+    padding: 100px 0;
+}
+ 
+.judul h1{
+    margin: 20px;
+    font-size: 2.5rem;
+}
+.section2{
+    
+    margin: 0 15%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.section2 .kotak{
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+     width: 250px;
+     border-radius: 5px;
+    transition: 0.1s;
+
+}
+.section2 .kotak:hover{
+   
+    background-color: rgb(255, 255, 255);
+     width: 250px;
+     border-radius: 5px;
+     transform: scale(1.02);
+     box-shadow: -2px 2px 5px grey;
+
+}
+.section2 .kotak:hover h5 a{
+    text-decoration: underline;
+}
+
+
+.section2 .gambarnya img{
+    border-radius: 5px;
+}
+.section2 .tulisan{
+ margin: 5px;
+
+ 
+}
+.tulisan h3{
+    margin:  5px 0 ;
+    font-family: Arial, sans-serif;
+    color:rgba(128, 128, 128, 0.753);
+}
+.tulisan h5 a{
+    text-decoration: none;
+    color:#115b8b;
+}
+
+.tulisan h5{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    color: #197dc0;
+
+}
+
+footer{
+    color: white;
+}
+footer .atas{
+    background-color: #07184d;
+    display: flex;
+    padding: 10px 5%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .atas .isi{
+     
+    margin: 30px;
+    padding: 0 5px;
+    width: 200px;
+    text-align: center;
+    
+}
+ 
+footer .atas .isi h4{
+    display: inline-block;
+    margin: 5px 0;
+}
+footer .atas .isi ul li{
+    list-style: none;
+    margin:3px;
+    text-align: center;
+}
+footer .atas .isi ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer .atas .isi ul li a:hover{
+    text-decoration: none;
+    color: rgb(115, 211, 255);
+}
+.bawah span{
+    background-color: #000;
+    display: block;
+    text-align: center;
+    
+}
+span a{
+    color: white;
+    text-decoration: none;
+}
+span a:hover{
+    color: white;
+}
+
+
+
+ 
+.sticky{
+    position: fixed;
+    z-index: 3;
+   top: 0;
+   width: 80%;
+    box-shadow: 0 0 10px 0 grey;
+    color: white;
+}
+.sticky +.image{
+
+    margin-top: 50px   ;
+  }
+
+
+@media (max-width:720px){
+    nav .navbar{
+        display:none;
+    }
+
+
+}
+
+h1.page-sejarah{
+    border-bottom: #fdc019 3px solid;
+    padding: 10px;
+    margin: 0 10% 2% 10%;
+}
+h1.page-visi{
+    border-bottom: #3aafa9 3px solid;
+    padding: 10px;
+    margin: 0 10% 2% 10%;
+}
+
+
+.slider .slick-slide {
+    border: solid 1px #000;
+}
+
+.slider .slick-slide img {
+    width: 100%;
+}
+
+/* make button larger and change their positions */
+.slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    
+}
+.slick-prev {
+    left: 5px;
+}
+.slick-next {
+    right: 5px;
+}
+.slick-prev:before, 
+.slick-next:before {
+    font-size: 40px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* move dotted nav position */
+.slick-dots {
+    bottom: 15px;
+}
+/* enlarge dots and change their colors */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+    color: #dedede;
+}
+#visimisi{
+    background-color: white;
+}
