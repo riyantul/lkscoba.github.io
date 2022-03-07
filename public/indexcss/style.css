@@ -15,6 +15,7 @@ html{
     font-size: small;
     justify-content: flex-end;
     padding: 2px 10%;
+    flex-wrap: wrap;
     
 }
 
