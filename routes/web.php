@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserControlController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\WebInformasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,5 +35,10 @@ Route::post('/register',[LoginController::class,'store']);
 Route::get('/admin',[DashboardController::class,'index']);
 Route::resource('/user',UserControlController::class);
 Route::resource('/karyawan',KaryawanController::class);
+
+
+
+//website informasi
+Route::get('/visimisi',[WebInformasiController::class, 'visimisi']);
 
 
